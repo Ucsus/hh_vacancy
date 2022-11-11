@@ -36,7 +36,7 @@ public class MainPageTests extends TestBase {
             mainPage.mainHeader.shouldHave(exactText("Работа найдется для каждого"));
         });
         step("Проверяем блок Вакансии дня", () -> {
-            mainPage.vacancyOfDay.shouldHave(exactText("Вакансии дня"));
+            mainPage.vacancyOfDay.shouldHave(text("Вакансии дня"));
         });
     }
 
