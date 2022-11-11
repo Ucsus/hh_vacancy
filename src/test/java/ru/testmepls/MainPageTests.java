@@ -1,7 +1,6 @@
 package ru.testmepls;
 
 import com.codeborne.selenide.CollectionCondition;
-import com.sun.tools.javac.util.List;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,10 +9,10 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.testmepls.data.Locale;
 
+import java.util.List;
 import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
@@ -42,8 +41,8 @@ public class MainPageTests extends TestBase {
 
     static Stream<Arguments> siteMenuText() {
         return Stream.of(
-                Arguments.of(Locale.EN, List.of("About the company", "Our vacancies", "Advertising on the website", "Software requirements")),
-                Arguments.of(Locale.RU, List.of("О компании", "Наши вакансии", "Реклама на сайте", "Требования к ПО"))
+                Arguments.of(Locale.EN, List.of("About the company", " Our vacancies", " Advertising on the website", " Software requirements")),
+                Arguments.of(Locale.RU, List.of("О компании", " Наши вакансии", " Реклама на сайте", " Требования к ПО"))
         );
     }
 
