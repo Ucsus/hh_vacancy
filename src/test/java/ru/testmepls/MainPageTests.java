@@ -53,7 +53,7 @@ public class MainPageTests extends TestBase {
         open("/");
         $(".bloko-gap_bottom").scrollTo();
         $("[data-qa=change-locale-" + locale.name() + "]").click();
-        $$(".nav-items-item--nZiKRBLX4HL9V421NL_r a").filter(visible).first(4).shouldHave(CollectionCondition.textsInAnyOrder(menuTexts));
+        $$(".nav-items-item--nZiKRBLX4HL9V421NL_r a").filter(visible).first(4).shouldHave(CollectionCondition.texts(menuTexts));
     }
 
 }
