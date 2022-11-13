@@ -8,8 +8,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.testmepls.data.Locale;
+import ru.testmepls.pages.MainPage;
+
 import java.util.List;
 import java.util.stream.Stream;
+
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
@@ -44,13 +47,32 @@ public class MainPageTests extends TestBase {
         );
     }
 
+    @DisplayName("Проверка меню")
     @MethodSource
     @ParameterizedTest(name = "Проверка отображения названия меню для локали {0}")
     void siteMenuText(Locale locale, List<String> menuTexts) {
-        open("/");
-        $(".bloko-gap_bottom").scrollTo();
-        $("[data-qa=change-locale-" + locale.name() + "]").click();
-        $$(".nav-items-item--nZiKRBLX4HL9V421NL_r a").filter(visible).first(4).shouldHave(CollectionCondition.texts(menuTexts));
+        step("Открываем главную страницу", () -> {
+            open("/");
+        });
+        step("Скроллим вниз", () -> {
+            $(".bloko-gap_bottom").scrollTo();
+        });
+        step("Меняем локаль", () -> {
+            $("[data-qa=change-locale-" + locale.name() + "]").click();
+        });
+        step("Проверям первые 4 элемента меню", () -> {
+            $$(".nav-items-item--nZiKRBLX4HL9V421NL_r a")
+                    .filter(visible)
+                    .first(4)
+                    .shouldHave(CollectionCondition.texts(menuTexts));
+        });
+
     }
 
+    @Test
+    public void testGithubTitle() {
+        // код выполнения теста
+        String title = driver.getTitle();
+        assertEquals(title, "GitHub: Where the world builds software · GitHub");
+    }
 }

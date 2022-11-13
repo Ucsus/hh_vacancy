@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd9af59e-4706-4d41-97f1-d49e6fe7bb7e" name="Changes" comment="change selector">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/testmepls/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/helpers/Attach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/testmepls/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/testmepls/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/MainPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/testmepls/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestCase.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +38,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="hh_vacancy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hh_vacancy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hh_vacancy" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -46,8 +61,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +78,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.MainPageTests.siteMenuText">
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ucsus/IdeaProjects/hh_vacancy/notifications&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.testmepls.helpers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ucsus\IdeaProjects\hh_vacancy\notifications" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ucsus\IdeaProjects\hh_vacancy\src\test\java\ru\testmepls" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.testmepls.helpers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.hh_vacancy [allureServe]">
+    <configuration name="MainPageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.testmepls.MainPageTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="MainPageTests.blocksTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -78,29 +135,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.testmepls.MainPageTests.blocksTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="MainPageTests.hhSiteMenuText" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.testmepls.MainPageTests.hhSiteMenuText&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MainPageTests.siteMenuText" />
-        <item itemvalue="Gradle.MainPageTests.blocksTest" />
         <item itemvalue="Gradle.hh_vacancy [allureServe]" />
         <item itemvalue="Gradle.hh_vacancy [allureReport]" />
-        <item itemvalue="Gradle.MainPageTests.hhSiteMenuText" />
+        <item itemvalue="Gradle.MainPageTests" />
+        <item itemvalue="Gradle.MainPageTests.siteMenuText" />
+        <item itemvalue="Gradle.MainPageTests.blocksTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668187720752</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change selector">
+      <created>1668187917602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668187917602</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
