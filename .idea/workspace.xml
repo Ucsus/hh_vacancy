@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd9af59e-4706-4d41-97f1-d49e6fe7bb7e" name="Changes" comment="change selector">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/helpers/Attach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/testmepls/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/pages/MainPage.java" afterDir="false" />
+    <list default="true" id="dd9af59e-4706-4d41-97f1-d49e6fe7bb7e" name="Changes" comment="Notifications">
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/testmepls/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/MainPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/testmepls/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/testmepls/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/TestCase.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,11 +74,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ucsus/IdeaProjects/hh_vacancy/notifications&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/Ucsus/IdeaProjects/hh_vacancy"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.testmepls.helpers" />
@@ -256,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668187917602</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Notifications">
+      <created>1668327216366</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668327216366</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +276,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added remote url" />
     <MESSAGE value="change selector" />
-    <option name="LAST_COMMIT_MESSAGE" value="change selector" />
+    <MESSAGE value="Notifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notifications" />
   </component>
 </project>

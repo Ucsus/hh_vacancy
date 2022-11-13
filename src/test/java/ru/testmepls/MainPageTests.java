@@ -69,10 +69,4 @@ public class MainPageTests extends TestBase {
 
     }
 
-    @Test
-    public void testGithubTitle() {
-        // код выполнения теста
-        String title = driver.getTitle();
-        assertEquals(title, "GitHub: Where the world builds software · GitHub");
-    }
 }
