@@ -109,11 +109,11 @@ public class MainPageTests extends TestBase {
         step("Открываем главную страницу", () -> {
             open("/");
         });
-        step("Меняем регион", () -> {
-            mainPageElements.regionButton.click();
-            mainPageElements.regionHeader.shouldHave(exactText("Укажите город, который требуется найти:"));
-            $(byText("Россия")).click();
-        });
+//        step("Меняем регион", () -> {
+//            mainPageElements.regionButton.click();
+//            mainPageElements.regionHeader.shouldHave(exactText("Укажите город, который требуется найти:"));
+//            $(byText("Россия")).click();
+//        });
         step("Ищем вакансию", () -> {
             mainPageElements.findVacancy.setValue("QA engineer");
             mainPageElements.findWorkButton.click();
