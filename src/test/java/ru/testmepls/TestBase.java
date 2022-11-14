@@ -7,6 +7,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import ru.testmepls.helpers.Attach;
 
 public class TestBase {
     @BeforeAll
@@ -27,6 +28,13 @@ public class TestBase {
             Configuration.remote = System.getProperty("remoteUrl");
         }
 
+    }
+    @AfterEach
+    void addAttachments() {
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
     }
 
 }
